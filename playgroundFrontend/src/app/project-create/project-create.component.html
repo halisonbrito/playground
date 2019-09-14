@@ -1,0 +1,42 @@
+
+<form (ngSubmit)="onSubmit()" #f="ngForm">
+    <div>
+      <label for="nameCandidate">Name Candidate</label><br>
+      <input type="text"
+             class="form-control"
+             id="nameCandidate"
+             [(ngModel)]="proj.candidate"
+             name="nameCandidate"
+             required>
+    </div>
+    <br>
+    <div>
+      <label for="nameProject">Project</label><br>
+      <input type="text"
+             class="form-control"
+             id="project"
+             [(ngModel)]="proj.name"
+             name="nameProject"
+             #email="ngModel">
+    </div>
+    <br>
+    <div>
+      <label for="nameProject">Year</label><br>
+      <input type="text"
+        class="form-control"
+        id="year"
+        [(ngModel)]="proj.year"
+        name="year">
+    </div>
+    <br>
+
+    Java <input type="checkbox" [(ngModel)]="skill1" name="skill1"/>      
+    Oracle  <input type="checkbox"  [(ngModel)]="skill2" name="skill2"/>      
+    JavaScript <input type="checkbox"  [(ngModel)]="skill3" name="skill3"/>  
+    C#  <input type="checkbox"  [(ngModel)]="skill4" name="skill4"/>      
+
+    <br>
+    <br>
+
+  <button type="submit" class="btn btn-primary" >Submit</button>
+</form>
