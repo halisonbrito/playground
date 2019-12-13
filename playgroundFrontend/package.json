@@ -27,7 +27,7 @@
     "i": "^0.3.6",
     "ngx-bar-rating": "^1.1.0",
     "ngx-material-file-input": "^1.1.1",
-    "npm": "^6.9.0",
+    "npm": "^6.13.4",
     "rxjs": "~6.3.3",
     "tslib": "^1.9.0",
     "zone.js": "~0.8.26"
